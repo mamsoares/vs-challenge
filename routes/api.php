@@ -52,6 +52,6 @@ Route::group([
 
 ], function ($router) {
 
-    Route::apiResource('products', 'v1\ProductController', ['except' => 'edit']);
+    Route::apiResource('products', 'v1\ProductController', ['except' => ['create', 'edit']]);
 });
 
